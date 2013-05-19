@@ -34,7 +34,6 @@
     [super viewDidLoad];
     
     _tableView.dataSource = self;
-    _tableView.delegate = self;
 }
 
 #pragma mark - UITableViewDataSource
@@ -51,10 +50,6 @@
     UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
-        
-        static int i = 0;
-        i++;
-        NSLog(@"created %d", i);
     }
     
     NSString *title = [_rows objectAtIndex:indexPath.row];

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STSimpleTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface STSimpleTableViewController : UIViewController<UITableViewDataSource>
 
 @end
