@@ -9,6 +9,7 @@
 #import "STMenuViewController.h"
 #import "STMenuRow.h"
 #import "STSimpleTableViewController.h"
+#import "STMultipleCellsViewController.h"
 
 @implementation STMenuViewController {
     __weak UITableView *_tableView;
@@ -30,6 +31,13 @@
         menuRow = [[STMenuRow alloc] init];
         menuRow.title = @"Simple TableView";
         menuRow.viewControllerClass = [STSimpleTableViewController class];
+        [_rows addObject:menuRow];
+        //
+        // MultipleCells
+        //
+        menuRow = [[STMenuRow alloc] init];
+        menuRow.title = @"Multiple Cells";
+        menuRow.viewControllerClass = [STMultipleCellsViewController class];
         [_rows addObject:menuRow];
     }
     return self;

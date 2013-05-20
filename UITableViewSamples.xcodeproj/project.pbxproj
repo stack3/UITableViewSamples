@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B77C8CFE1749FD08001FC752 /* STMultipleCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */; };
+		B77C8CFF1749FD08001FC752 /* STMultipleCellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8CFD1749FD08001FC752 /* STMultipleCellsViewController.xib */; };
+		B77C8D021749FE92001FC752 /* STMultipleCellRow.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D011749FE92001FC752 /* STMultipleCellRow.m */; };
+		B77C8D09174A031A001FC752 /* castle01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D06174A031A001FC752 /* castle01.jpg */; };
+		B77C8D0A174A031A001FC752 /* castle02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D07174A031A001FC752 /* castle02.jpg */; };
+		B77C8D0B174A031A001FC752 /* castle03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D08174A031A001FC752 /* castle03.jpg */; };
 		B7EC24FB174886FB00535DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FA174886FB00535DBE /* UIKit.framework */; };
 		B7EC24FD174886FB00535DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FC174886FB00535DBE /* Foundation.framework */; };
 		B7EC24FF174886FB00535DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FE174886FB00535DBE /* CoreGraphics.framework */; };
@@ -23,6 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B77C8CFB1749FD08001FC752 /* STMultipleCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMultipleCellsViewController.h; sourceTree = "<group>"; };
+		B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMultipleCellsViewController.m; sourceTree = "<group>"; };
+		B77C8CFD1749FD08001FC752 /* STMultipleCellsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMultipleCellsViewController.xib; sourceTree = "<group>"; };
+		B77C8D001749FE92001FC752 /* STMultipleCellRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMultipleCellRow.h; sourceTree = "<group>"; };
+		B77C8D011749FE92001FC752 /* STMultipleCellRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMultipleCellRow.m; sourceTree = "<group>"; };
+		B77C8D06174A031A001FC752 /* castle01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = castle01.jpg; sourceTree = "<group>"; };
+		B77C8D07174A031A001FC752 /* castle02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = castle02.jpg; sourceTree = "<group>"; };
+		B77C8D08174A031A001FC752 /* castle03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = castle03.jpg; sourceTree = "<group>"; };
 		B7EC24F7174886FB00535DBE /* UITableViewSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EC24FA174886FB00535DBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7EC24FC174886FB00535DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,6 +73,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B77C8CFA1749FC8E001FC752 /* TableViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B77C8CFB1749FD08001FC752 /* STMultipleCellsViewController.h */,
+				B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */,
+				B77C8CFD1749FD08001FC752 /* STMultipleCellsViewController.xib */,
+				B77C8D001749FE92001FC752 /* STMultipleCellRow.h */,
+				B77C8D011749FE92001FC752 /* STMultipleCellRow.m */,
+			);
+			name = TableViewDelegate;
+			sourceTree = "<group>";
+		};
+		B77C8D05174A031A001FC752 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B77C8D06174A031A001FC752 /* castle01.jpg */,
+				B77C8D07174A031A001FC752 /* castle02.jpg */,
+				B77C8D08174A031A001FC752 /* castle03.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B7EC24EE174886FB00535DBE = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +127,10 @@
 			children = (
 				B7EC25201748872400535DBE /* Menu */,
 				B7EC252A1748886400535DBE /* SimpleTableView */,
+				B77C8CFA1749FC8E001FC752 /* TableViewDelegate */,
 				B7EC2509174886FB00535DBE /* STAppDelegate.h */,
 				B7EC250A174886FB00535DBE /* STAppDelegate.m */,
+				B77C8D05174A031A001FC752 /* Resources */,
 				B7EC2501174886FB00535DBE /* Supporting Files */,
 			);
 			path = UITableViewSamples;
@@ -190,6 +228,10 @@
 				B7EC250F174886FB00535DBE /* Default@2x.png in Resources */,
 				B7EC2511174886FB00535DBE /* Default-568h@2x.png in Resources */,
 				B7EC253117488A1600535DBE /* STSimpleTableViewController.xib in Resources */,
+				B77C8CFF1749FD08001FC752 /* STMultipleCellsViewController.xib in Resources */,
+				B77C8D09174A031A001FC752 /* castle01.jpg in Resources */,
+				B77C8D0A174A031A001FC752 /* castle02.jpg in Resources */,
+				B77C8D0B174A031A001FC752 /* castle03.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +247,8 @@
 				B7EC25271748873400535DBE /* STMenuViewController.m in Sources */,
 				B7EC25291748873400535DBE /* STMenuRow.m in Sources */,
 				B7EC252E174888DF00535DBE /* STSimpleTableViewController.m in Sources */,
+				B77C8CFE1749FD08001FC752 /* STMultipleCellsViewController.m in Sources */,
+				B77C8D021749FE92001FC752 /* STMultipleCellRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +365,7 @@
 				B7EC251F174886FB00535DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
