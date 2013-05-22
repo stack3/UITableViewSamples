@@ -11,6 +11,7 @@
 #import "STSimpleTableViewController.h"
 #import "STMultipleCellsViewController.h"
 #import "STSelectCellViewController.h"
+#import "STEditingViewController.h"
 
 @implementation STMenuViewController {
     __weak UITableView *_tableView;
@@ -21,7 +22,7 @@
 {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.title = @"Nimbus Samples";
+        self.title = @"UITableView Samples";
         
         _rows = [NSMutableArray arrayWithCapacity:10];
         
@@ -41,11 +42,18 @@
         menuRow.viewControllerClass = [STMultipleCellsViewController class];
         [_rows addObject:menuRow];
         //
-        //
+        // SelectCell
         //
         menuRow = [[STMenuRow alloc] init];
         menuRow.title = @"Select Cell";
         menuRow.viewControllerClass = [STSelectCellViewController class];
+        [_rows addObject:menuRow];
+        //
+        // Editing
+        //
+        menuRow = [[STMenuRow alloc] init];
+        menuRow.title = @"Editing";
+        menuRow.viewControllerClass = [STEditingViewController class];
         [_rows addObject:menuRow];
     }
     return self;
