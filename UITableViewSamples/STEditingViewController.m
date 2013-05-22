@@ -80,4 +80,18 @@
     [_tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    if (destinationIndexPath.row < _rows.count) {
+        NSString *title = [_rows objectAtIndex:sourceIndexPath.row];
+        [_rows removeObjectAtIndex:sourceIndexPath.row];
+        [_rows insertObject:title atIndex:destinationIndexPath.row];
+    }
+}
+
 @end
