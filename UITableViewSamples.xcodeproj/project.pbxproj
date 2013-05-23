@@ -21,6 +21,9 @@
 		B77C8D33174CA408001FC752 /* STSubclassingCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D31174CA408001FC752 /* STSubclassingCellViewController.xib */; };
 		B77C8D38174CA604001FC752 /* STEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D36174CA604001FC752 /* STEditingViewController.m */; };
 		B77C8D39174CA604001FC752 /* STEditingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D37174CA604001FC752 /* STEditingViewController.xib */; };
+		B77C8D3C174DACBF001FC752 /* STCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D3B174DACBF001FC752 /* STCustomCell.m */; };
+		B77C8D3E174DAD1C001FC752 /* STCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D3D174DAD1C001FC752 /* STCustomCell.xib */; };
+		B77C8D47174DAFCF001FC752 /* STCustomRow.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D46174DAFCF001FC752 /* STCustomRow.m */; };
 		B7EC24FB174886FB00535DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FA174886FB00535DBE /* UIKit.framework */; };
 		B7EC24FD174886FB00535DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FC174886FB00535DBE /* Foundation.framework */; };
 		B7EC24FF174886FB00535DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FE174886FB00535DBE /* CoreGraphics.framework */; };
@@ -57,6 +60,11 @@
 		B77C8D35174CA604001FC752 /* STEditingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEditingViewController.h; sourceTree = "<group>"; };
 		B77C8D36174CA604001FC752 /* STEditingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEditingViewController.m; sourceTree = "<group>"; };
 		B77C8D37174CA604001FC752 /* STEditingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STEditingViewController.xib; sourceTree = "<group>"; };
+		B77C8D3A174DACBF001FC752 /* STCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCustomCell.h; sourceTree = "<group>"; };
+		B77C8D3B174DACBF001FC752 /* STCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCustomCell.m; sourceTree = "<group>"; };
+		B77C8D3D174DAD1C001FC752 /* STCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCustomCell.xib; sourceTree = "<group>"; };
+		B77C8D45174DAFCF001FC752 /* STCustomRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCustomRow.h; sourceTree = "<group>"; };
+		B77C8D46174DAFCF001FC752 /* STCustomRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCustomRow.m; sourceTree = "<group>"; };
 		B7EC24F7174886FB00535DBE /* UITableViewSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EC24FA174886FB00535DBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7EC24FC174886FB00535DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +142,11 @@
 				B77C8D2F174CA408001FC752 /* STSubclassingCellViewController.h */,
 				B77C8D30174CA408001FC752 /* STSubclassingCellViewController.m */,
 				B77C8D31174CA408001FC752 /* STSubclassingCellViewController.xib */,
+				B77C8D45174DAFCF001FC752 /* STCustomRow.h */,
+				B77C8D46174DAFCF001FC752 /* STCustomRow.m */,
+				B77C8D3A174DACBF001FC752 /* STCustomCell.h */,
+				B77C8D3B174DACBF001FC752 /* STCustomCell.m */,
+				B77C8D3D174DAD1C001FC752 /* STCustomCell.xib */,
 			);
 			name = SubclassingCell;
 			sourceTree = "<group>";
@@ -292,6 +305,7 @@
 				B77C8D24174B8933001FC752 /* STSelectCellDetailViewController.xib in Resources */,
 				B77C8D33174CA408001FC752 /* STSubclassingCellViewController.xib in Resources */,
 				B77C8D39174CA604001FC752 /* STEditingViewController.xib in Resources */,
+				B77C8D3E174DAD1C001FC752 /* STCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +327,8 @@
 				B77C8D23174B8933001FC752 /* STSelectCellDetailViewController.m in Sources */,
 				B77C8D32174CA408001FC752 /* STSubclassingCellViewController.m in Sources */,
 				B77C8D38174CA604001FC752 /* STEditingViewController.m in Sources */,
+				B77C8D3C174DACBF001FC752 /* STCustomCell.m in Sources */,
+				B77C8D47174DAFCF001FC752 /* STCustomRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
