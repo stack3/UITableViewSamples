@@ -66,8 +66,8 @@
     }
     
     STCustomRow *row = [_rows objectAtIndex:indexPath.row];
-//    cell.titleLabel.text = row.title;
-//    cell.photoImageView.image = row.image;
+    cell.titleLabel.text = row.title;
+    cell.photoImageView.image = row.image;
     
     return cell;
 }

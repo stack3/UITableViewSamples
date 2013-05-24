@@ -10,4 +10,7 @@
 
 @interface STCustomCell2 : UITableViewCell
 
+@property(weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property(weak, nonatomic) IBOutlet UIImageView *photoImageView;
+
 @end

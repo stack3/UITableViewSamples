@@ -15,9 +15,12 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"STViewOnContentViewOfCustomCell2"
-                                                       owner:nil
+                                                       owner:self
                                                      options:nil];
         UIView *viewOnContentView = [views objectAtIndex:0];
+        viewOnContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+        
+        self.frame = viewOnContentView.bounds;
         [self.contentView addSubview:viewOnContentView];
     }
     return self;
