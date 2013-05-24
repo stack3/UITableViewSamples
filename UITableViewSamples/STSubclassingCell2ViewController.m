@@ -47,6 +47,21 @@
     
     _tableView.dataSource = self;
     _tableView.rowHeight = 350;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit"
+                                                                              style:UIBarButtonItemStyleBordered
+                                                                             target:self
+                                                                             action:@selector(didTapEditButton)];
+}
+
+- (void)didTapEditButton
+{
+    [_tableView setEditing:!_tableView.editing animated:YES];
+    if (_tableView.editing) {
+        self.navigationItem.rightBarButtonItem.title = @"Cancel";
+    } else {
+        self.navigationItem.rightBarButtonItem.title = @"Edit";
+    }
 }
 
 #pragma mark - UITableViewDataSource

@@ -18,9 +18,10 @@
                                                        owner:self
                                                      options:nil];
         UIView *viewOnContentView = [views objectAtIndex:0];
-        viewOnContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         
+        viewOnContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         self.frame = viewOnContentView.bounds;
+        
         [self.contentView addSubview:viewOnContentView];
     }
     return self;
