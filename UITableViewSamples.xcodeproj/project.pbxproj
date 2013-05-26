@@ -28,6 +28,9 @@
 		B77C8D50174EF647001FC752 /* STSubclassingCell2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D4E174EF647001FC752 /* STSubclassingCell2ViewController.xib */; };
 		B77C8D53174EF6B5001FC752 /* STCustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D52174EF6B5001FC752 /* STCustomCell2.m */; };
 		B77C8D55174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D54174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib */; };
+		B77C8D9217520B2B001FC752 /* STSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D9017520B2B001FC752 /* STSectionViewController.m */; };
+		B77C8D9317520B2B001FC752 /* STSectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D9117520B2B001FC752 /* STSectionViewController.xib */; };
+		B77C8D9617520BDE001FC752 /* STSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D9517520BDD001FC752 /* STSection.m */; };
 		B7EC24FB174886FB00535DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FA174886FB00535DBE /* UIKit.framework */; };
 		B7EC24FD174886FB00535DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FC174886FB00535DBE /* Foundation.framework */; };
 		B7EC24FF174886FB00535DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FE174886FB00535DBE /* CoreGraphics.framework */; };
@@ -75,6 +78,11 @@
 		B77C8D51174EF6B5001FC752 /* STCustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCustomCell2.h; sourceTree = "<group>"; };
 		B77C8D52174EF6B5001FC752 /* STCustomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCustomCell2.m; sourceTree = "<group>"; };
 		B77C8D54174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STViewOnContentViewOfCustomCell2.xib; sourceTree = "<group>"; };
+		B77C8D8F17520B2B001FC752 /* STSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSectionViewController.h; sourceTree = "<group>"; };
+		B77C8D9017520B2B001FC752 /* STSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSectionViewController.m; sourceTree = "<group>"; };
+		B77C8D9117520B2B001FC752 /* STSectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STSectionViewController.xib; sourceTree = "<group>"; };
+		B77C8D9417520BDD001FC752 /* STSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSection.h; sourceTree = "<group>"; };
+		B77C8D9517520BDD001FC752 /* STSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSection.m; sourceTree = "<group>"; };
 		B7EC24F7174886FB00535DBE /* UITableViewSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EC24FA174886FB00535DBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7EC24FC174886FB00535DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -184,6 +192,18 @@
 			name = SubclassingCell2;
 			sourceTree = "<group>";
 		};
+		B77C8D8E17520B0A001FC752 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				B77C8D8F17520B2B001FC752 /* STSectionViewController.h */,
+				B77C8D9017520B2B001FC752 /* STSectionViewController.m */,
+				B77C8D9117520B2B001FC752 /* STSectionViewController.xib */,
+				B77C8D9417520BDD001FC752 /* STSection.h */,
+				B77C8D9517520BDD001FC752 /* STSection.m */,
+			);
+			name = Section;
+			sourceTree = "<group>";
+		};
 		B7EC24EE174886FB00535DBE = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +241,7 @@
 				B77C8D34174CA50B001FC752 /* Editing */,
 				B77C8D2E174CA3E8001FC752 /* SubclassingCell */,
 				B77C8D4B174EF622001FC752 /* SubclassingCell2 */,
+				B77C8D8E17520B0A001FC752 /* Section */,
 				B7EC2509174886FB00535DBE /* STAppDelegate.h */,
 				B7EC250A174886FB00535DBE /* STAppDelegate.m */,
 				B77C8D05174A031A001FC752 /* Resources */,
@@ -332,6 +353,7 @@
 				B77C8D3E174DAD1C001FC752 /* STCustomCell.xib in Resources */,
 				B77C8D50174EF647001FC752 /* STSubclassingCell2ViewController.xib in Resources */,
 				B77C8D55174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib in Resources */,
+				B77C8D9317520B2B001FC752 /* STSectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +379,8 @@
 				B77C8D47174DAFCF001FC752 /* STCustomRow.m in Sources */,
 				B77C8D4F174EF647001FC752 /* STSubclassingCell2ViewController.m in Sources */,
 				B77C8D53174EF6B5001FC752 /* STCustomCell2.m in Sources */,
+				B77C8D9217520B2B001FC752 /* STSectionViewController.m in Sources */,
+				B77C8D9617520BDE001FC752 /* STSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@
 #import "STEditingViewController.h"
 #import "STSubclassingCellViewController.h"
 #import "STSubclassingCell2ViewController.h"
+#import "STSectionViewController.h"
 
 @implementation STMenuViewController {
     __weak UITableView *_tableView;
@@ -70,6 +71,13 @@
         menuRow = [[STMenuRow alloc] init];
         menuRow.title = @"Subclassing Cell 2";
         menuRow.viewControllerClass = [STSubclassingCell2ViewController class];
+        [_rows addObject:menuRow];
+        //
+        // Section
+        //
+        menuRow = [[STMenuRow alloc] init];
+        menuRow.title = @"Section";
+        menuRow.viewControllerClass = [STSectionViewController class];
         [_rows addObject:menuRow];
     }
     return self;
