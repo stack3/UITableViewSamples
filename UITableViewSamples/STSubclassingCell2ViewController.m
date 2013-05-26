@@ -46,6 +46,7 @@
     [super viewDidLoad];
     
     _tableView.dataSource = self;
+    _tableView.delegate = self;
     _tableView.rowHeight = 350;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit"
@@ -85,6 +86,16 @@
     cell.photoImageView.image = row.image;
     
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [_rows removeObjectAtIndex:indexPath.row];
+        [_tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
 }
 
 @end
