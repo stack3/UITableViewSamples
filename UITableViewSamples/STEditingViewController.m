@@ -33,6 +33,7 @@
     [super viewDidLoad];
 
     _tableView.dataSource = self;
+    _tableView.delegate = self;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit"
                                                                               style:UIBarButtonItemStyleBordered

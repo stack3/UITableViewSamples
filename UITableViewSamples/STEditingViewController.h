@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STEditingViewController : UIViewController<UITableViewDataSource>
+@interface STEditingViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end
