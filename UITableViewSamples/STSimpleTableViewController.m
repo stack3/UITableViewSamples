@@ -8,25 +8,26 @@
 
 #import "STSimpleTableViewController.h"
 
-@implementation STSimpleTableViewController {
-    IBOutlet __weak UITableView *_tableView;
-    
-    __strong NSMutableArray *_rows;
-}
+@interface STSimpleTableViewController ()
 
-- (id)init
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *rows;
+
+@end
+
+@implementation STSimpleTableViewController
+
+- (void)awakeFromNib
 {
-    self = [super initWithNibName:@"STSimpleTableViewController" bundle:nil];
-    if (self) {
-        self.title = @"Simple TableView";
-        
-        _rows = [NSMutableArray arrayWithCapacity:100];
-        for (int i = 0; i < 100; i++) {
-            NSString *title = [NSString stringWithFormat:@"Item %d", i];
-            [_rows addObject:title];
-        }
+    [super awakeFromNib];
+    
+    self.title = @"Simple TableView";
+    
+    _rows = [NSMutableArray arrayWithCapacity:100];
+    for (int i = 0; i < 100; i++) {
+        NSString *title = [NSString stringWithFormat:@"Item %d", i];
+        [_rows addObject:title];
     }
-    return self;
 }
 
 - (void)viewDidLoad

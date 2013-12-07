@@ -130,7 +130,9 @@
 {
     STMenuRow *row = [_rows objectAtIndex:indexPath.row];
 
-    UIViewController *con = [[row.viewControllerClass alloc] init];
+    NSString *storyboardName = NSStringFromClass(row.viewControllerClass);
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    UIViewController *con = [sb instantiateInitialViewController];
     [self.navigationController pushViewController:con animated:YES];
 }
 

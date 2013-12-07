@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5dZ-y5-FCB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Simple Table View Controller-->
+        <scene sceneID="R1I-Ap-F2q">
+            <objects>
+                <viewController id="5dZ-y5-FCB" customClass="STSimpleTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o83-dG-Gyu"/>
+                        <viewControllerLayoutGuide type="bottom" id="GCF-98-Jd2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ale-nB-vnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hTs-Ne-GtC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GCF-98-Jd2" firstAttribute="top" secondItem="hTs-Ne-GtC" secondAttribute="bottom" id="C8y-Fh-ZVU"/>
+                            <constraint firstItem="hTs-Ne-GtC" firstAttribute="leading" secondItem="Ale-nB-vnZ" secondAttribute="leading" id="RVF-0u-36g"/>
+                            <constraint firstItem="hTs-Ne-GtC" firstAttribute="top" secondItem="Ale-nB-vnZ" secondAttribute="top" id="a6U-di-gNr"/>
+                            <constraint firstAttribute="trailing" secondItem="hTs-Ne-GtC" secondAttribute="trailing" id="ffJ-GL-kk9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="hTs-Ne-GtC" id="tUw-TI-jzi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWd-cB-5ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="56"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B7609F321852C10D0087CB44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7609F311852C10D0087CB44 /* Images.xcassets */; };
+		B7609F341852C1650087CB44 /* STSimpleTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F331852C1650087CB44 /* STSimpleTableViewController.storyboard */; };
 		B77C8CFE1749FD08001FC752 /* STMultipleCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */; };
 		B77C8CFF1749FD08001FC752 /* STMultipleCellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8CFD1749FD08001FC752 /* STMultipleCellsViewController.xib */; };
 		B77C8D021749FE92001FC752 /* STMultipleCellRow.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D011749FE92001FC752 /* STMultipleCellRow.m */; };
@@ -44,11 +45,11 @@
 		B7EC25271748873400535DBE /* STMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EC25221748873400535DBE /* STMenuViewController.m */; };
 		B7EC25291748873400535DBE /* STMenuRow.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EC25261748873400535DBE /* STMenuRow.m */; };
 		B7EC252E174888DF00535DBE /* STSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EC252C174888DF00535DBE /* STSimpleTableViewController.m */; };
-		B7EC253117488A1600535DBE /* STSimpleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EC253017488A1600535DBE /* STSimpleTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7609F311852C10D0087CB44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B7609F331852C1650087CB44 /* STSimpleTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STSimpleTableViewController.storyboard; sourceTree = "<group>"; };
 		B77C8CFB1749FD08001FC752 /* STMultipleCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMultipleCellsViewController.h; sourceTree = "<group>"; };
 		B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMultipleCellsViewController.m; sourceTree = "<group>"; };
 		B77C8CFD1749FD08001FC752 /* STMultipleCellsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMultipleCellsViewController.xib; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		B7EC25261748873400535DBE /* STMenuRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMenuRow.m; sourceTree = "<group>"; };
 		B7EC252B174888DF00535DBE /* STSimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSimpleTableViewController.h; sourceTree = "<group>"; };
 		B7EC252C174888DF00535DBE /* STSimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSimpleTableViewController.m; sourceTree = "<group>"; };
-		B7EC253017488A1600535DBE /* STSimpleTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STSimpleTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,7 +283,7 @@
 			children = (
 				B7EC252B174888DF00535DBE /* STSimpleTableViewController.h */,
 				B7EC252C174888DF00535DBE /* STSimpleTableViewController.m */,
-				B7EC253017488A1600535DBE /* STSimpleTableViewController.xib */,
+				B7609F331852C1650087CB44 /* STSimpleTableViewController.storyboard */,
 			);
 			name = SimpleTableView;
 			sourceTree = "<group>";
@@ -342,9 +342,9 @@
 			files = (
 				B7EC2505174886FB00535DBE /* InfoPlist.strings in Resources */,
 				B7EC250D174886FB00535DBE /* Default.png in Resources */,
+				B7609F341852C1650087CB44 /* STSimpleTableViewController.storyboard in Resources */,
 				B7EC250F174886FB00535DBE /* Default@2x.png in Resources */,
 				B7EC2511174886FB00535DBE /* Default-568h@2x.png in Resources */,
-				B7EC253117488A1600535DBE /* STSimpleTableViewController.xib in Resources */,
 				B77C8CFF1749FD08001FC752 /* STMultipleCellsViewController.xib in Resources */,
 				B77C8D09174A031A001FC752 /* castle01.jpg in Resources */,
 				B77C8D0A174A031A001FC752 /* castle02.jpg in Resources */,
