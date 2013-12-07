@@ -58,6 +58,21 @@
     
     [_tableView registerClass:[STCustomCell class] forCellReuseIdentifier:_STCellId];
     [_tableView registerClass:[STCustomCell class] forCellReuseIdentifier:_STCellForHeightId];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit"
+                                                                              style:UIBarButtonItemStyleBordered
+                                                                             target:self
+                                                                             action:@selector(didTapEditButton)];
+}
+
+- (void)didTapEditButton
+{
+    [_tableView setEditing:!_tableView.editing animated:YES];
+    if (_tableView.editing) {
+        self.navigationItem.rightBarButtonItem.title = @"Cancel";
+    } else {
+        self.navigationItem.rightBarButtonItem.title = @"Edit";
+    }
 }
 
 #pragma mark - UITableViewDataSource
@@ -92,6 +107,14 @@
     [cell layoutIfNeeded];
     CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     return height;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [_rows removeObjectAtIndex:indexPath.row];
+        [_tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
 }
 
 @end

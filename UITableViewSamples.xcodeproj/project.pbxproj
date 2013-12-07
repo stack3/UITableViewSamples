@@ -14,7 +14,6 @@
 		B7609F3E1852C45A0087CB44 /* STSelectCellDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F3D1852C45A0087CB44 /* STSelectCellDetailViewController.storyboard */; };
 		B7609F401852C5670087CB44 /* STEditingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F3F1852C5670087CB44 /* STEditingViewController.storyboard */; };
 		B7609F421852C6190087CB44 /* STSubclassingCellViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F411852C6190087CB44 /* STSubclassingCellViewController.storyboard */; };
-		B7609F441852C6B80087CB44 /* STSubclassingCell2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F431852C6B80087CB44 /* STSubclassingCell2ViewController.storyboard */; };
 		B7609F461852C7700087CB44 /* STSectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F451852C7700087CB44 /* STSectionViewController.storyboard */; };
 		B77C8CFE1749FD08001FC752 /* STMultipleCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */; };
 		B77C8D021749FE92001FC752 /* STMultipleCellRow.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D011749FE92001FC752 /* STMultipleCellRow.m */; };
@@ -28,9 +27,6 @@
 		B77C8D3C174DACBF001FC752 /* STCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D3B174DACBF001FC752 /* STCustomCell.m */; };
 		B77C8D3E174DAD1C001FC752 /* STCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D3D174DAD1C001FC752 /* STCustomCell.xib */; };
 		B77C8D47174DAFCF001FC752 /* STCustomRow.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D46174DAFCF001FC752 /* STCustomRow.m */; };
-		B77C8D4F174EF647001FC752 /* STSubclassingCell2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D4D174EF647001FC752 /* STSubclassingCell2ViewController.m */; };
-		B77C8D53174EF6B5001FC752 /* STCustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D52174EF6B5001FC752 /* STCustomCell2.m */; };
-		B77C8D55174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D54174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib */; };
 		B77C8D9217520B2B001FC752 /* STSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D9017520B2B001FC752 /* STSectionViewController.m */; };
 		B77C8D9617520BDE001FC752 /* STSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D9517520BDD001FC752 /* STSection.m */; };
 		B7EC24FB174886FB00535DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EC24FA174886FB00535DBE /* UIKit.framework */; };
@@ -55,7 +51,6 @@
 		B7609F3D1852C45A0087CB44 /* STSelectCellDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STSelectCellDetailViewController.storyboard; sourceTree = "<group>"; };
 		B7609F3F1852C5670087CB44 /* STEditingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STEditingViewController.storyboard; sourceTree = "<group>"; };
 		B7609F411852C6190087CB44 /* STSubclassingCellViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STSubclassingCellViewController.storyboard; sourceTree = "<group>"; };
-		B7609F431852C6B80087CB44 /* STSubclassingCell2ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STSubclassingCell2ViewController.storyboard; sourceTree = "<group>"; };
 		B7609F451852C7700087CB44 /* STSectionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STSectionViewController.storyboard; sourceTree = "<group>"; };
 		B77C8CFB1749FD08001FC752 /* STMultipleCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMultipleCellsViewController.h; sourceTree = "<group>"; };
 		B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMultipleCellsViewController.m; sourceTree = "<group>"; };
@@ -77,11 +72,6 @@
 		B77C8D3D174DAD1C001FC752 /* STCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCustomCell.xib; sourceTree = "<group>"; };
 		B77C8D45174DAFCF001FC752 /* STCustomRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCustomRow.h; sourceTree = "<group>"; };
 		B77C8D46174DAFCF001FC752 /* STCustomRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCustomRow.m; sourceTree = "<group>"; };
-		B77C8D4C174EF647001FC752 /* STSubclassingCell2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSubclassingCell2ViewController.h; sourceTree = "<group>"; };
-		B77C8D4D174EF647001FC752 /* STSubclassingCell2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSubclassingCell2ViewController.m; sourceTree = "<group>"; };
-		B77C8D51174EF6B5001FC752 /* STCustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCustomCell2.h; sourceTree = "<group>"; };
-		B77C8D52174EF6B5001FC752 /* STCustomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCustomCell2.m; sourceTree = "<group>"; };
-		B77C8D54174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STViewOnContentViewOfCustomCell2.xib; sourceTree = "<group>"; };
 		B77C8D8F17520B2B001FC752 /* STSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSectionViewController.h; sourceTree = "<group>"; };
 		B77C8D9017520B2B001FC752 /* STSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSectionViewController.m; sourceTree = "<group>"; };
 		B77C8D9417520BDD001FC752 /* STSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSection.h; sourceTree = "<group>"; };
@@ -181,19 +171,6 @@
 			name = Editing;
 			sourceTree = "<group>";
 		};
-		B77C8D4B174EF622001FC752 /* SubclassingCell2 */ = {
-			isa = PBXGroup;
-			children = (
-				B77C8D4C174EF647001FC752 /* STSubclassingCell2ViewController.h */,
-				B77C8D4D174EF647001FC752 /* STSubclassingCell2ViewController.m */,
-				B7609F431852C6B80087CB44 /* STSubclassingCell2ViewController.storyboard */,
-				B77C8D51174EF6B5001FC752 /* STCustomCell2.h */,
-				B77C8D52174EF6B5001FC752 /* STCustomCell2.m */,
-				B77C8D54174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib */,
-			);
-			name = SubclassingCell2;
-			sourceTree = "<group>";
-		};
 		B77C8D8E17520B0A001FC752 /* Section */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +219,6 @@
 				B77C8D1A174B84DB001FC752 /* SelectCell */,
 				B77C8D34174CA50B001FC752 /* Editing */,
 				B77C8D2E174CA3E8001FC752 /* SubclassingCell */,
-				B77C8D4B174EF622001FC752 /* SubclassingCell2 */,
 				B77C8D8E17520B0A001FC752 /* Section */,
 				B7EC2509174886FB00535DBE /* STAppDelegate.h */,
 				B7EC250A174886FB00535DBE /* STAppDelegate.m */,
@@ -353,11 +329,9 @@
 				B77C8D0B174A031A001FC752 /* castle03.jpg in Resources */,
 				B7609F321852C10D0087CB44 /* Images.xcassets in Resources */,
 				B7609F3E1852C45A0087CB44 /* STSelectCellDetailViewController.storyboard in Resources */,
-				B7609F441852C6B80087CB44 /* STSubclassingCell2ViewController.storyboard in Resources */,
 				B7609F3A1852C3110087CB44 /* STMultipleCellsViewController.storyboard in Resources */,
 				B77C8D3E174DAD1C001FC752 /* STCustomCell.xib in Resources */,
 				B7609F401852C5670087CB44 /* STEditingViewController.storyboard in Resources */,
-				B77C8D55174EF9D2001FC752 /* STViewOnContentViewOfCustomCell2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +355,6 @@
 				B77C8D38174CA604001FC752 /* STEditingViewController.m in Sources */,
 				B77C8D3C174DACBF001FC752 /* STCustomCell.m in Sources */,
 				B77C8D47174DAFCF001FC752 /* STCustomRow.m in Sources */,
-				B77C8D4F174EF647001FC752 /* STSubclassingCell2ViewController.m in Sources */,
-				B77C8D53174EF6B5001FC752 /* STCustomCell2.m in Sources */,
 				B77C8D9217520B2B001FC752 /* STSectionViewController.m in Sources */,
 				B77C8D9617520BDE001FC752 /* STSection.m in Sources */,
 			);

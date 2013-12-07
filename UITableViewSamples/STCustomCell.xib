@@ -33,11 +33,11 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="jRE-Fx-oas" firstAttribute="leading" secondItem="iGG-9M-ihp" secondAttribute="leading" constant="20" id="4H3-zv-toY"/>
                 <constraint firstItem="xgv-dQ-3bB" firstAttribute="leading" secondItem="iGG-9M-ihp" secondAttribute="leading" constant="20" id="7Nq-nH-6iU"/>
                 <constraint firstAttribute="trailing" secondItem="xgv-dQ-3bB" secondAttribute="trailing" constant="20" id="Dxt-fY-l0o"/>
                 <constraint firstItem="xgv-dQ-3bB" firstAttribute="top" secondItem="iGG-9M-ihp" secondAttribute="top" constant="20" id="a0O-Pk-0Y2"/>
                 <constraint firstAttribute="bottom" secondItem="jRE-Fx-oas" secondAttribute="bottom" constant="20" id="jOb-8K-hXa"/>
+                <constraint firstAttribute="centerX" secondItem="jRE-Fx-oas" secondAttribute="centerX" id="wpd-bf-QSO"/>
                 <constraint firstItem="jRE-Fx-oas" firstAttribute="top" secondItem="xgv-dQ-3bB" secondAttribute="bottom" constant="8" id="zVK-iH-i43"/>
             </constraints>
         </view>
