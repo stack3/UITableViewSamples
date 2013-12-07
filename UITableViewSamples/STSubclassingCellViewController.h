@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STSubclassingCellViewController : UIViewController<UITableViewDataSource>
+@interface STSubclassingCellViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end

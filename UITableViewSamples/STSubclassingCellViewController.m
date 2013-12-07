@@ -10,10 +10,14 @@
 #import "STCustomRow.h"
 #import "STCustomCell.h"
 
+#define _STCellId @"Cell"
+#define _STCellForHeightId @"CellForHeight"
+
 @interface STSubclassingCellViewController ()
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *rows;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) STCustomCell *cellForHeight;
 
 @end
 
@@ -38,7 +42,7 @@
     [_rows addObject:row];
     
     row = [[STCustomRow alloc] init];
-    row.title = @"castle03";
+    row.title = @"castle03\nLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
     row.image = [UIImage imageNamed:@"castle03.jpg"];
     [_rows addObject:row];
 }
@@ -48,7 +52,12 @@
     [super viewDidLoad];
     
     _tableView.dataSource = self;
-    _tableView.rowHeight = 350;
+    _tableView.delegate = self;
+    
+    // _tableView.rowHeight = 350;
+    
+    [_tableView registerClass:[STCustomCell class] forCellReuseIdentifier:_STCellId];
+    [_tableView registerClass:[STCustomCell class] forCellReuseIdentifier:_STCellForHeightId];
 }
 
 #pragma mark - UITableViewDataSource
@@ -60,18 +69,29 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *reuseIdentifier = @"CellID";
-    
-    STCustomCell *cell = (STCustomCell *)[_tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-    if (cell == nil) {
-        cell = [STCustomCell loadFromNib];
-    }
+    STCustomCell *cell = [_tableView dequeueReusableCellWithIdentifier:_STCellId forIndexPath:indexPath];
     
     STCustomRow *row = [_rows objectAtIndex:indexPath.row];
     cell.titleLabel.text = row.title;
     cell.photoImageView.image = row.image;
     
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    STCustomCell *cell = [_tableView dequeueReusableCellWithIdentifier:_STCellForHeightId];
+    
+    STCustomRow *row = [_rows objectAtIndex:indexPath.row];
+    cell.titleLabel.text = row.title;
+    cell.photoImageView.image = row.image;
+    
+    [cell setNeedsLayout];
+    [cell layoutIfNeeded];
+    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    return height;
 }
 
 @end
