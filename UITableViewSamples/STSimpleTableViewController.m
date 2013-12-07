@@ -8,6 +8,8 @@
 
 #import "STSimpleTableViewController.h"
 
+#define _STCellId @"Cell"
+
 @interface STSimpleTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -34,6 +36,7 @@
 {
     [super viewDidLoad];
     
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:_STCellId];
     _tableView.dataSource = self;
 }
 
@@ -46,14 +49,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *reuseIdentifier = @"CellID";
-    
-    UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
-    }
-    
     NSString *title = [_rows objectAtIndex:indexPath.row];
+    
+    UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:_STCellId forIndexPath:indexPath];
     cell.textLabel.text = title;
     
     return cell;
