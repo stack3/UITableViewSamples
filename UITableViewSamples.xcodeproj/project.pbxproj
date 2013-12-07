@@ -15,6 +15,7 @@
 		B7609F401852C5670087CB44 /* STEditingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F3F1852C5670087CB44 /* STEditingViewController.storyboard */; };
 		B7609F421852C6190087CB44 /* STSubclassingCellViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F411852C6190087CB44 /* STSubclassingCellViewController.storyboard */; };
 		B7609F461852C7700087CB44 /* STSectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F451852C7700087CB44 /* STSectionViewController.storyboard */; };
+		B7609F541852D6910087CB44 /* STMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7609F531852D6910087CB44 /* STMenuViewController.storyboard */; };
 		B77C8CFE1749FD08001FC752 /* STMultipleCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */; };
 		B77C8D021749FE92001FC752 /* STMultipleCellRow.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D011749FE92001FC752 /* STMultipleCellRow.m */; };
 		B77C8D09174A031A001FC752 /* castle01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B77C8D06174A031A001FC752 /* castle01.jpg */; };
@@ -52,6 +53,7 @@
 		B7609F3F1852C5670087CB44 /* STEditingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STEditingViewController.storyboard; sourceTree = "<group>"; };
 		B7609F411852C6190087CB44 /* STSubclassingCellViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STSubclassingCellViewController.storyboard; sourceTree = "<group>"; };
 		B7609F451852C7700087CB44 /* STSectionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STSectionViewController.storyboard; sourceTree = "<group>"; };
+		B7609F531852D6910087CB44 /* STMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STMenuViewController.storyboard; sourceTree = "<group>"; };
 		B77C8CFB1749FD08001FC752 /* STMultipleCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMultipleCellsViewController.h; sourceTree = "<group>"; };
 		B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMultipleCellsViewController.m; sourceTree = "<group>"; };
 		B77C8D001749FE92001FC752 /* STMultipleCellRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMultipleCellRow.h; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 			children = (
 				B7EC25211748873400535DBE /* STMenuViewController.h */,
 				B7EC25221748873400535DBE /* STMenuViewController.m */,
+				B7609F531852D6910087CB44 /* STMenuViewController.storyboard */,
 				B7EC25251748873400535DBE /* STMenuRow.h */,
 				B7EC25261748873400535DBE /* STMenuRow.m */,
 			);
@@ -316,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7609F541852D6910087CB44 /* STMenuViewController.storyboard in Resources */,
 				B7609F3C1852C3B00087CB44 /* STSelectCellViewController.storyboard in Resources */,
 				B7EC2505174886FB00535DBE /* InfoPlist.strings in Resources */,
 				B7EC250D174886FB00535DBE /* Default.png in Resources */,

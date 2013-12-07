@@ -14,7 +14,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    STMenuViewController *con = [[STMenuViewController alloc] init];
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:NSStringFromClass([STMenuViewController class]) bundle:nil];
+    STMenuViewController *con = [sb instantiateInitialViewController];
     UINavigationController *naviCon = [[UINavigationController alloc] initWithRootViewController:con];
     self.viewController = naviCon;
     self.window.rootViewController = naviCon;
