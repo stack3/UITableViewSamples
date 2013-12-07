@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GNq-RR-hA0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Multiple Cells View Controller-->
+        <scene sceneID="8ob-a6-kfR">
+            <objects>
+                <viewController id="GNq-RR-hA0" customClass="STMultipleCellsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J2y-M2-4rC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ytk-bR-J6g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="agE-fp-rc5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tAo-hx-S54">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ytk-bR-J6g" firstAttribute="top" secondItem="tAo-hx-S54" secondAttribute="bottom" id="0Pr-YY-iNw"/>
+                            <constraint firstItem="tAo-hx-S54" firstAttribute="leading" secondItem="agE-fp-rc5" secondAttribute="leading" id="AaY-ZX-XLk"/>
+                            <constraint firstItem="tAo-hx-S54" firstAttribute="top" secondItem="agE-fp-rc5" secondAttribute="top" id="TKX-6O-8FU"/>
+                            <constraint firstAttribute="trailing" secondItem="tAo-hx-S54" secondAttribute="trailing" id="sWE-dj-Bd1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="tAo-hx-S54" id="TEf-Gc-JM1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MN2-ed-V8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="36"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -8,19 +8,19 @@
 
 #import "STSelectCellDetailViewController.h"
 
-@implementation STSelectCellDetailViewController {
-    __strong NSString *_labelTitle;
-    IBOutlet __weak UILabel *_label;
-}
+@interface STSelectCellDetailViewController ()
 
-- (id)initWithLabelTitle:(NSString *)labelTitle
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+@end
+
+@implementation STSelectCellDetailViewController
+
+- (void)awakeFromNib
 {
-    self = [super initWithNibName:@"STSelectCellDetailViewController" bundle:nil];
-    if (self) {
-        self.title = @"Select Cell Detail";
-        _labelTitle = labelTitle;
-    }
-    return self;
+    [super awakeFromNib];
+    
+    self.title = @"Select Cell Detail";
 }
 
 - (void)viewDidLoad

@@ -9,39 +9,41 @@
 #import "STSectionViewController.h"
 #import "STSection.h"
 
-@implementation STSectionViewController {
-    __weak IBOutlet UITableView *_tableView;
-    __strong NSMutableArray *_sections;
-}
+@interface STSectionViewController ()
 
-- (id)init
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *sections;
+
+@end
+
+@implementation STSectionViewController
+
+- (void)awakeFromNib
 {
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        self.title = @"Section";
-        
-        _sections = [NSMutableArray arrayWithCapacity:3];
-        
-        STSection *section;
-        section = [[STSection alloc] init];
-        section.title = @"Section1";
-        [section.rows addObject:@"Item1"];
-        [_sections addObject:section];
-        
-        section = [[STSection alloc] init];
-        section.title = @"Section2";
-        [section.rows addObject:@"Item1"];
-        [section.rows addObject:@"Item2"];
-        [_sections addObject:section];
-        
-        section = [[STSection alloc] init];
-        section.title = @"Section3";
-        [section.rows addObject:@"Item1"];
-        [section.rows addObject:@"Item2"];
-        [section.rows addObject:@"Item3"];
-        [_sections addObject:section];
-    }
-    return self;
+    [super awakeFromNib];
+    
+    self.title = @"Section";
+    
+    _sections = [NSMutableArray arrayWithCapacity:3];
+    
+    STSection *section;
+    section = [[STSection alloc] init];
+    section.title = @"Section1";
+    [section.rows addObject:@"Item1"];
+    [_sections addObject:section];
+    
+    section = [[STSection alloc] init];
+    section.title = @"Section2";
+    [section.rows addObject:@"Item1"];
+    [section.rows addObject:@"Item2"];
+    [_sections addObject:section];
+    
+    section = [[STSection alloc] init];
+    section.title = @"Section3";
+    [section.rows addObject:@"Item1"];
+    [section.rows addObject:@"Item2"];
+    [section.rows addObject:@"Item3"];
+    [_sections addObject:section];
 }
 
 - (void)viewDidLoad

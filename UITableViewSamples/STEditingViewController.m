@@ -8,24 +8,26 @@
 
 #import "STEditingViewController.h"
 
-@implementation STEditingViewController {
-    IBOutlet __weak UITableView *_tableView;
-    __strong NSMutableArray *_rows;
-}
+@interface STEditingViewController ()
 
-- (id)init
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *rows;
+
+@end
+
+@implementation STEditingViewController
+
+- (void)awakeFromNib
 {
-    self = [super initWithNibName:@"STEditingViewController" bundle:nil];
-    if (self) {
-        self.title = @"Editing";
-        
-        _rows = [NSMutableArray arrayWithCapacity:100];
-        for (int i = 0; i < 100; i++) {
-            NSString *title = [NSString stringWithFormat:@"Item %d", i];
-            [_rows addObject:title];
-        }
+    [super awakeFromNib];
+    
+    self.title = @"Editing";
+    
+    _rows = [NSMutableArray arrayWithCapacity:100];
+    for (int i = 0; i < 100; i++) {
+        NSString *title = [NSString stringWithFormat:@"Item %d", i];
+        [_rows addObject:title];
     }
-    return self;
 }
 
 - (void)viewDidLoad

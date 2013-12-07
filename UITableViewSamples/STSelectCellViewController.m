@@ -9,24 +9,26 @@
 #import "STSelectCellViewController.h"
 #import "STSelectCellDetailViewController.h"
 
-@implementation STSelectCellViewController {
-    IBOutlet __weak UITableView *_tableView;
-    __strong NSMutableArray *_rows;
-}
+@interface STSelectCellViewController ()
 
-- (id)init
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *rows;
+
+@end
+
+@implementation STSelectCellViewController
+
+- (void)awakeFromNib
 {
-    self = [super initWithNibName:@"STSelectCellViewController" bundle:nil];
-    if (self) {
-        self.title = @"Select Cell";
-        
-        _rows = [NSMutableArray arrayWithCapacity:100];
-        for (int i = 0; i < 100; i++) {
-            NSString *title = [NSString stringWithFormat:@"Item %d", i];
-            [_rows addObject:title];
-        }
+    [super awakeFromNib];
+    
+    self.title = @"Select Cell";
+    
+    _rows = [NSMutableArray arrayWithCapacity:100];
+    for (int i = 0; i < 100; i++) {
+        NSString *title = [NSString stringWithFormat:@"Item %d", i];
+        [_rows addObject:title];
     }
-    return self;
 }
 
 - (void)viewDidLoad
@@ -71,8 +73,11 @@
 {
     NSString *title = [_rows objectAtIndex:indexPath.row];
     
-    STSelectCellDetailViewController *controller = [[STSelectCellDetailViewController alloc] initWithLabelTitle:title];
-    [self.navigationController pushViewController:controller animated:YES];
+    NSString *storyboardName = NSStringFromClass([STSelectCellDetailViewController class]);
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    STSelectCellDetailViewController *con = [sb instantiateInitialViewController];
+    con.labelTitle = title;
+    [self.navigationController pushViewController:con animated:YES];
 }
 
 @end

@@ -9,47 +9,49 @@
 #import "STMultipleCellsViewController.h"
 #import "STMultipleCellRow.h"
 
-@implementation STMultipleCellsViewController {
-    IBOutlet __weak UITableView *_tableView;
-    NSMutableArray *_rows;
-}
+@interface STMultipleCellsViewController ()
 
-- (id)init
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *rows;
+
+@end
+
+@implementation STMultipleCellsViewController
+
+- (void)awakeFromNib
 {
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        self.title = @"Multiple Cells";
+    [super awakeFromNib];
+    
+    self.title = @"Multiple Cells";
+    
+    _rows = [NSMutableArray arrayWithCapacity:30];
+    for (int i = 0; i < 10; i++) {
+        STMultipleCellRow *row = [[STMultipleCellRow alloc] init];
+        row.cellStyle = UITableViewCellStyleDefault;
+        row.title = [NSString stringWithFormat:@"Title %d", i];
+        row.image = [UIImage imageNamed:@"castle01.jpg"];
+        [_rows addObject:row];
         
-        _rows = [NSMutableArray arrayWithCapacity:30];
-        for (int i = 0; i < 10; i++) {
-            STMultipleCellRow *row = [[STMultipleCellRow alloc] init];
-            row.cellStyle = UITableViewCellStyleDefault;
-            row.title = [NSString stringWithFormat:@"Title %d", i];
-            row.image = [UIImage imageNamed:@"castle01.jpg"];
-            [_rows addObject:row];
-            
-            row = [[STMultipleCellRow alloc] init];
-            row.cellStyle = UITableViewCellStyleSubtitle;
-            row.title = [NSString stringWithFormat:@"Title %d", i];
-            row.detail = @"Detail";
-            row.image = [UIImage imageNamed:@"castle02.jpg"];
-            [_rows addObject:row];
-
-            row = [[STMultipleCellRow alloc] init];
-            row.cellStyle = UITableViewCellStyleValue1;
-            row.title = [NSString stringWithFormat:@"Left %d", i];
-            row.detail = [NSString stringWithFormat:@"Right %d", i];
-            row.image = [UIImage imageNamed:@"castle03.jpg"];
-            [_rows addObject:row];
-            
-            row = [[STMultipleCellRow alloc] init];
-            row.cellStyle = UITableViewCellStyleValue2;
-            row.title = [NSString stringWithFormat:@"Left %d", i];
-            row.detail = [NSString stringWithFormat:@"Right %d", i];
-            [_rows addObject:row];
-        }
+        row = [[STMultipleCellRow alloc] init];
+        row.cellStyle = UITableViewCellStyleSubtitle;
+        row.title = [NSString stringWithFormat:@"Title %d", i];
+        row.detail = @"Detail";
+        row.image = [UIImage imageNamed:@"castle02.jpg"];
+        [_rows addObject:row];
+        
+        row = [[STMultipleCellRow alloc] init];
+        row.cellStyle = UITableViewCellStyleValue1;
+        row.title = [NSString stringWithFormat:@"Left %d", i];
+        row.detail = [NSString stringWithFormat:@"Right %d", i];
+        row.image = [UIImage imageNamed:@"castle03.jpg"];
+        [_rows addObject:row];
+        
+        row = [[STMultipleCellRow alloc] init];
+        row.cellStyle = UITableViewCellStyleValue2;
+        row.title = [NSString stringWithFormat:@"Left %d", i];
+        row.detail = [NSString stringWithFormat:@"Right %d", i];
+        [_rows addObject:row];
     }
-    return self;
 }
 
 - (void)viewDidLoad

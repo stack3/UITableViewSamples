@@ -10,6 +10,6 @@
 
 @interface STSelectCellDetailViewController : UIViewController
 
-- (id)initWithLabelTitle:(NSString *)labelTitle;
+@property (strong, nonatomic) NSString *labelTitle;
 
 @end

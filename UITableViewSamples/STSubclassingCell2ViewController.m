@@ -10,35 +10,37 @@
 #import "STCustomRow.h"
 #import "STCustomCell2.h"
 
-@implementation STSubclassingCell2ViewController {
-    IBOutlet __weak UITableView *_tableView;
-    __strong NSMutableArray *_rows;
-}
+@interface STSubclassingCell2ViewController ()
 
-- (id)init
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *rows;
+
+@end
+
+@implementation STSubclassingCell2ViewController
+
+- (void)awakeFromNib
 {
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        self.title = @"Subclassing Cell";
-        
-        _rows = [NSMutableArray arrayWithCapacity:3];
-        
-        STCustomRow *row = [[STCustomRow alloc] init];
-        row.title = @"castle01";
-        row.image = [UIImage imageNamed:@"castle01.jpg"];
-        [_rows addObject:row];
-        
-        row = [[STCustomRow alloc] init];
-        row.title = @"castle02";
-        row.image = [UIImage imageNamed:@"castle02.jpg"];
-        [_rows addObject:row];
-        
-        row = [[STCustomRow alloc] init];
-        row.title = @"castle03";
-        row.image = [UIImage imageNamed:@"castle03.jpg"];
-        [_rows addObject:row];
-    }
-    return self;
+    [super awakeFromNib];
+    
+    self.title = @"Subclassing Cell";
+    
+    _rows = [NSMutableArray arrayWithCapacity:3];
+    
+    STCustomRow *row = [[STCustomRow alloc] init];
+    row.title = @"castle01";
+    row.image = [UIImage imageNamed:@"castle01.jpg"];
+    [_rows addObject:row];
+    
+    row = [[STCustomRow alloc] init];
+    row.title = @"castle02";
+    row.image = [UIImage imageNamed:@"castle02.jpg"];
+    [_rows addObject:row];
+    
+    row = [[STCustomRow alloc] init];
+    row.title = @"castle03";
+    row.image = [UIImage imageNamed:@"castle03.jpg"];
+    [_rows addObject:row];
 }
 
 - (void)viewDidLoad
