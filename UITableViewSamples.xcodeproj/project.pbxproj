@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7609F321852C10D0087CB44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7609F311852C10D0087CB44 /* Images.xcassets */; };
 		B77C8CFE1749FD08001FC752 /* STMultipleCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */; };
 		B77C8CFF1749FD08001FC752 /* STMultipleCellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77C8CFD1749FD08001FC752 /* STMultipleCellsViewController.xib */; };
 		B77C8D021749FE92001FC752 /* STMultipleCellRow.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C8D011749FE92001FC752 /* STMultipleCellRow.m */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7609F311852C10D0087CB44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B77C8CFB1749FD08001FC752 /* STMultipleCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMultipleCellsViewController.h; sourceTree = "<group>"; };
 		B77C8CFC1749FD08001FC752 /* STMultipleCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMultipleCellsViewController.m; sourceTree = "<group>"; };
 		B77C8CFD1749FD08001FC752 /* STMultipleCellsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMultipleCellsViewController.xib; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				B7EC2509174886FB00535DBE /* STAppDelegate.h */,
 				B7EC250A174886FB00535DBE /* STAppDelegate.m */,
 				B77C8D05174A031A001FC752 /* Resources */,
+				B7609F311852C10D0087CB44 /* Images.xcassets */,
 				B7EC2501174886FB00535DBE /* Supporting Files */,
 			);
 			path = UITableViewSamples;
@@ -346,6 +349,7 @@
 				B77C8D09174A031A001FC752 /* castle01.jpg in Resources */,
 				B77C8D0A174A031A001FC752 /* castle02.jpg in Resources */,
 				B77C8D0B174A031A001FC752 /* castle03.jpg in Resources */,
+				B7609F321852C10D0087CB44 /* Images.xcassets in Resources */,
 				B77C8D1F174B8641001FC752 /* STSelectCellViewController.xib in Resources */,
 				B77C8D24174B8933001FC752 /* STSelectCellDetailViewController.xib in Resources */,
 				B77C8D33174CA408001FC752 /* STSubclassingCellViewController.xib in Resources */,
@@ -459,9 +463,12 @@
 		B7EC251E174886FB00535DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UITableViewSamples/UITableViewSamples-Prefix.pch";
 				INFOPLIST_FILE = "UITableViewSamples/UITableViewSamples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -470,9 +477,12 @@
 		B7EC251F174886FB00535DBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UITableViewSamples/UITableViewSamples-Prefix.pch";
 				INFOPLIST_FILE = "UITableViewSamples/UITableViewSamples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
